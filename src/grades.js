@@ -1,14 +1,20 @@
 const scanner=require("readline-sync");
 console.log("\nEnter three homework grades.");
-const Number(homework1=scanner.question());
-const Number(homework2=scanner.question());
-const Number(homework3=scanner.question());
-const (homeworkweight=()
+const homework1=Number(scanner.question());
+const homework2=Number(scanner.question());
+const homework3=Number(scanner.question());
+const homeworkweight=((homework1+homework2+homework3)/3)*.15;
 console.log("\nEnter three quiz grades.");
-const Number(quiz1=scanner.question());
-const Number(quiz2=scanner.question());
-const Number(quiz3=scanner.question());
+const quiz1=Number(scanner.question());
+const quiz2=Number(scanner.question());
+const quiz3=Number(scanner.question());
+const quizweight=((quiz1+quiz2+quiz3)/3)*.35;
 console.log("\nEnter three test grades.");
-const Number(test1=scanner.question());
-const Number(test3=scanner.question());
-const Number(test2=scanner.question());
+const test1=Number(scanner.question());
+const test3=Number(scanner.question());
+const test2=Number(scanner.question());
+const testweight=((test1+test2+test3)/3)*.5;
+const grade=((homeworkweight+quizweight+testweight)/100).toLocaleString('en',{
+  style:'percent',maximumFractionDigits: 2, minimumFractionDigits: 2
+})
+console.log("\nYour rmarking period grade is " + grade +"." );
