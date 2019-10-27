@@ -6,4 +6,4 @@ const finalperimeter=perimeterInCenti.toLocaleString('en', {
   style:'decimal',maximumFractionDigits: 2, minimumFractionDigits: 2
 });
 
-console.log("\nA(n) " + width + "-by-" + length + "-inch sheet of paper has a perimeter of " + finalperimeter + " cenimeter(s).")
+console.log("\nA(n) " + width + "-by-" + length + "-inch sheet of paper has a perimeter of " + finalperimeter + " centimeter(s).")

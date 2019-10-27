@@ -6,7 +6,7 @@ const fedTax=yearlySalary*.157;
 const stateTax=yearlySalary*.0447;
 const socialSecurityTax=yearlySalary*.062;
 const medicareTax=yearlySalary*.0145;
-const tax=fedTax+stateTax+socialSecuritytax+medicareTax;
+const tax=fedTax+stateTax+socialSecurityTax+medicareTax;
 const finalSalary=yearlySalary-tax;
 const homePay=(finalSalary/24).toLocaleString('en',{
   style:'currency', currency:'USD'
